@@ -1,0 +1,35 @@
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Mango Scraper for Reddit Articles</h1>
+  </div>
+</div>
+
+      <div>
+        <a id="scrape" href="/scrape">Mango Scraper</a>
+        <a href="/saved">Favorite Articles</a>
+      </div>
+ <li class="collection-item avatar">
+      <div id="articles">
+      <ul>
+      {{#each index}}
+      <li class="articles">
+        {{title}}
+        </br>
+        {{link}}
+      </br>
+      <button class="comment" data-id={{_id}} type="button" name="button">Notes</button>
+      {{#unless saved}}
+      <button class="notes" data-id={{_id}} data-saved={{saved}} type="button" name="button">Favorite Article</button>
+      </li>
+      {{/unless}}
+      {{/each}}
+      </ul>
+      </li>
+      </div>
+
+
+      <div id="notes">
+        
+      </div>
+         
+      

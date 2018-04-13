@@ -1,0 +1,33 @@
+
+#articles {
+    display: inline-block;
+    overflow: auto;
+    width: 70%;
+    height: 650px;
+  }
+
+  #comments {
+    float: right;
+    width: 35%;
+  }
+
+  textarea {
+    height: 210px;
+    font-size: 20px;
+  }
+
+  textarea, input {
+    display: block;
+    width: 100%;
+  }
+
+  input {
+    height: 34px;
+    font-size: 22px;
+  }
+ 
+  .jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+    background-color: orange}

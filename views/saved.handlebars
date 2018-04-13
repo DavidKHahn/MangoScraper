@@ -1,0 +1,29 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Favorite Articles</h1>
+  </div>
+</div>
+
+<div>
+  <a href="/">Home</a>
+</div>
+
+<div id="articles">
+  <ul>
+    {{#each array}}
+      {{#if saved}}
+        <li class= "articles">
+          {{title}}
+        </br>
+          {{link}}
+        </br>
+        <button class="note" data-id={{_id}} type="button" name="button">Notes</button>
+        <button class="remove" data-id={{_id}} type="button" name="button">Delete</button>
+      {{/if}}
+    {{/each}}
+  </ul>
+</div>
+
+<div id="notes">
+
+</div>
